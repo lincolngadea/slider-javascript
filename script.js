@@ -1,6 +1,13 @@
 let totalSlides = document.querySelectorAll(".slider--item").length; //retorna quantidade de elementos com a classe
 let currentSlide = 0;
 
+/*  let sliderWidth = document.querySelector('.slider').clientWidth;
+    document.querySelector(".slider--width").style.width = 
+    slideWith * totalSlides;
+    document.querySelector(".slider--controls").style.width = 
+    `${sliderWidth}px`;*/
+//remover comentário se for usar imagem com tamanho fixo e fazer o mesmo no css
+
 document.querySelector(".slider--width").style.width = 
     `calc(100vw * ${totalSlides})`;
 
